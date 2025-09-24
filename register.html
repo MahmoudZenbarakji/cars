@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODRINO - Sign Up</title>
+    <link rel="stylesheet" href="./register.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="registration-section">
+        <!-- Enhanced Form Section -->
+        <div class="form-section">
+            <div class="logo-container">
+                <img src="./assets/images/Modrino-removebg-preview 1.png" alt="Modrino Logo" class="logo">
+                <h1 class="welcome-text">Join MODRINO</h1>
+                <p class="subtitle">Create your account to access premium car services</p>
+            </div>
+
+            <form class="registration-form" onsubmit="return false;">
+                <div class="form-group">
+                    <div class="input-container">
+                        <i class="fas fa-user input-icon"></i>
+                        <input id="name" type="text" placeholder="Enter your full name" >
+                        <label for="name" class="floating-label">Full Name</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="input-container">
+                        <i class="fas fa-phone input-icon"></i>
+                        <input id="phonenumber" type="tel" placeholder="Enter your phone number" >
+                        <label for="phonenumber" class="floating-label">Phone Number</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="input-container">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input id="password1" type="password" placeholder="Create a strong password" >
+                        <label for="password1" class="floating-label">Password</label>
+                        <i class="fas fa-eye password-toggle" onclick="togglePassword()"></i>
+                    </div>
+                </div>
+
+                <div class="terms-container">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#" class="terms-link">Terms of Service</a> and <a href="#" class="terms-link">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <button type="button" class="signup-btn" onclick="createAccount()">
+                    <span>Create Account</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+
+            <div class="login-link">
+                <p>Already have an account? <a href="login.html" class="login-link-text">Sign In</a></p>
+            </div>
+        </div>
+
+        <!-- Enhanced Carousel Section -->
+        <div class="carousel-section">
+            <div class="carousel-header">
+                <h2>Our Premium Fleet</h2>
+                <p>Discover luxury vehicles available for rent</p>
+            </div>
+            
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <div class="car-overlay">
+                            <h3>Mercedes E-Class</h3>
+                            <p>Luxury Sedan</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&h=400&fit=crop&crop=center&fm=png&auto=format" alt="Mercedes E-Class Luxury Sedan">
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="car-overlay">
+                            <h3>BMW X5</h3>
+                            <p>Premium SUV</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&h=400&fit=crop&crop=center&fm=png&auto=format" alt="BMW X5 Premium SUV">
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="car-overlay">
+                            <h3>Audi A4</h3>
+                            <p>Executive Sedan</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&h=400&fit=crop&crop=center&fm=png&auto=format" alt="Audi A4 Executive Sedan">
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="car-overlay">
+                            <h3>Tesla Model S</h3>
+                            <p>Electric Luxury</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=600&h=400&fit=crop&crop=center&fm=png&auto=format" alt="Tesla Model S Electric Luxury">
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="car-overlay">
+                            <h3>Porsche 911</h3>
+                            <p>Sports Car</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=400&fit=crop&crop=center&fm=png&auto=format" alt="Porsche 911 Sports Car">
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="car-overlay">
+                            <h3>Lexus RX</h3>
+                            <p>Luxury SUV</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1549317336-206569e8475c?w=600&h=400&fit=crop&crop=center&fm=png&auto=format" alt="Lexus RX Luxury SUV">
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="car-overlay">
+                            <h3>Range Rover</h3>
+                            <p>Premium SUV</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&h=400&fit=crop&crop=center&fm=png&auto=format" alt="Range Rover Premium SUV">
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="car-overlay">
+                            <h3>Mercedes AMG GT</h3>
+                            <p>High Performance</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&h=400&fit=crop&crop=center&fm=png&auto=format" alt="Mercedes AMG GT High Performance">
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="car-overlay">
+                            <h3>Lamborghini Huracán</h3>
+                            <p>Super Sports Car</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=400&fit=crop&crop=center&fm=png&auto=format" alt="Lamborghini Huracán Super Sports Car">
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="car-overlay">
+                            <h3>Ferrari 488</h3>
+                            <p>Italian Supercar</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=600&h=400&fit=crop&crop=center&fm=png&auto=format" alt="Ferrari 488 Italian Supercar">
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="car-overlay">
+                            <h3>Bentley Continental</h3>
+                            <p>Luxury Grand Tourer</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&h=400&fit=crop&crop=center&fm=png&auto=format" alt="Bentley Continental Luxury Grand Tourer">
+                    </div>
+                </div>
+                
+                <!-- Carousel Navigation -->
+                <div class="carousel-nav">
+                    <button class="nav-btn prev-btn" onclick="changeSlide(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-btn next-btn" onclick="changeSlide(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="currentSlide(1)"></span>
+                    <span class="indicator" onclick="currentSlide(2)"></span>
+                    <span class="indicator" onclick="currentSlide(3)"></span>
+                    <span class="indicator" onclick="currentSlide(4)"></span>
+                    <span class="indicator" onclick="currentSlide(5)"></span>
+                    <span class="indicator" onclick="currentSlide(6)"></span>
+                    <span class="indicator" onclick="currentSlide(7)"></span>
+                    <span class="indicator" onclick="currentSlide(8)"></span>
+                    <span class="indicator" onclick="currentSlide(9)"></span>
+                    <span class="indicator" onclick="currentSlide(10)"></span>
+                    <span class="indicator" onclick="currentSlide(11)"></span>
+                    <span class="indicator" onclick="currentSlide(12)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            indicators[index].classList.add('active');
+        }
+
+        function changeSlide(direction) {
+            currentSlideIndex = (currentSlideIndex + direction + totalSlides) % totalSlides;
+            showSlide(currentSlideIndex);
+        }
+
+        function currentSlide(index) {
+            currentSlideIndex = index - 1;
+            showSlide(currentSlideIndex);
+        }
+
+        function togglePassword() {
+            const passwordInput = document.getElementById('password1');
+            const toggleIcon = document.querySelector('.password-toggle');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleIcon.classList.remove('fa-eye');
+                toggleIcon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                toggleIcon.classList.remove('fa-eye-slash');
+                toggleIcon.classList.add('fa-eye');
+            }
+        }
+
+        function createAccount() {
+            // Prevent default form submission
+            event.preventDefault();
+            
+            // Get form data
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phonenumber').value;
+            const password = document.getElementById('password1').value;
+            const termsChecked = document.querySelector('input[type="checkbox"]').checked;
+            
+            // Basic validation
+            if (!name || !phone || !password) {
+                alert('Please fill in all fields');
+                return false;
+            }
+            
+            if (!termsChecked) {
+                alert('Please agree to the Terms of Service and Privacy Policy');
+                return false;
+            }
+            
+            // If validation passes, redirect to index page
+            alert('Account created successfully! Redirecting...');
+            window.location.href = './index.html';
+            return false;
+        }
+
+        // Auto-advance carousel
+        setInterval(() => {
+            changeSlide(1);
+        }, 4000);
+
+        // Initialize first slide
+        showSlide(0);
+    </script>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="assets/images/Modrino-removebg-preview 1.png" alt="MODRINO Logo">
+                    <h3>MODRINO</h3>
+                </div>
+                <p>Your premier destination for luxury car rental and sales. Experience excellence in every journey.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./rentingcar.html">Rent Cars</a></li>
+                    <li><a href="./buyingCar.html">Buy Cars</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="./rentingcar.html">Luxury Car Rental</a></li>
+                    <li><a href="./buyingCar.html">Car Sales</a></li>
+                    <li><a href="#">Maintenance</a></li>
+                    <li><a href="#">Insurance</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Street, Premium City</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@modrino.com</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 MODRINO. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+</body>
+</html>
